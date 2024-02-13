@@ -18,6 +18,7 @@ namespace FRN.API.Controllers
         [HttpGet("get")]
         public IActionResult Get() 
         {
+
             var result = _produtoAppService.Get();
 
             if (IsValidOperation())
